@@ -30,6 +30,12 @@ buildscript {
   }
 
   repositories {
+    maven {
+      url = uri("https://maven.aliyun.com/repository/gradle-plugin")
+    }
+    maven {
+      url = uri("https://maven.aliyun.com/repository/public/")
+    }
     mavenCentral()
     gradlePluginPortal()
     google()
@@ -52,6 +58,12 @@ allprojects {
   version = "5.0.0-SNAPSHOT"
 
   repositories {
+    maven {
+      url = uri("https://maven.aliyun.com/repository/public/")
+    }
+    maven {
+      url = uri("https://maven.aliyun.com/repository/gradle-plugin")
+    }
     mavenCentral()
     google()
   }
